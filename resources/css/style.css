@@ -64,6 +64,7 @@ header span {
 }
 
 /* main banner */
+
 .main-banner {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
   background-repeat: no-repeat;
@@ -74,21 +75,18 @@ header span {
 }
 
 .content {
-  display: flex;
-  position: relative;
-  margin-left: 45%;
-  margin-right: 11rem;
-  top: 10rem;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
   background-color: white;
   color: gray;
-  max-width: 996px;
   height: 5rem;
-  justify-content: flex-end;
   text-align: center;
+  align-items: center;
 }
 
 .content span {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
@@ -97,36 +95,41 @@ header span {
 
 /* store */
 
- .flex-container, .products, .idea {
+ #middle, .products, .idea {
    display: flex;
    justify-content: center;
    width: 960px;
 }
 
 .product {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
   align-items: center;
   height: 8rem;
   width: 5rem;
   margin: 3rem;
 }
 
-.description {
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+#paper.product img {
+   width: 3.5rem;
+   padding-right: .75rem;
+   padding-left: .75rem;
+   margin-bottom: 1rem;
+}
 
-  padding-bottom: 0;
+#ruler.product img {
+  margin-bottom: 2.8rem;
 }
 
 .product img {
-  width: 3.5rem;
-  padding-top: 0;
+  width: 5rem;
+  margin-bottom: 2.25rem;
 }
 
 .description {
-  display: block;
-  padding-bottom: 0;
+
   text-align: center;
   margin-bottom: 3rem;
   color: gray;
@@ -134,42 +137,57 @@ header span {
 
 .flex-container.idea {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 960px;
 }
 
-.info .appointment {
+.appointment {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   background-color: cadetblue;
   color: white;
   padding: 0.5rem 0 0.5rem 1.25rem;
   width: 10rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
 }
 
 .info {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-.appointment {
   display: block;
   justify-content: center;
   text-align: left;
+  width: 35%;
   padding-right: 5%;
+  margin-bottom: 5rem;
 }
 
-footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  margin-top: 5rem;
-  max-width: 960px;
+#glasses {
+  display: block;
+  justify-content: center;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  width: 0 auto;
+  background-color: azure;
+  height: 9.5rem;
 }
 
 footer img {
-  display: inline-block;
-  justify-content: flex-start;
-  padding: 4rem 1rem 4rem 4rem;
+padding: 4rem 1rem 4rem 4rem;
+  height: 1.5rem;
   color: gray;
+  align-self: center;
+}
+
+#glasses, #glasses span {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+#glasses span {
+  padding-top: 4rem;
+  padding-left: 1rem;
 }
