@@ -7,13 +7,13 @@ body {
   line-height: 1.4;
 }
 
-h1 {
-  font-weight: bold;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-a {
-  color: white;
-  text-decoration: none;
+h1 {
+  font-weight: bold;
 }
 
 .flex-container {
@@ -47,19 +47,18 @@ header img {
   padding: 1rem 1rem 1rem 2rem;
 }
 
-header nav {
+nav {
   text-align: right;
   flex-grow: 1;
 }
 
-header span {
+nav span {
   display: inline-block;
-  text-decoration: none;
-  color: white;
   padding: 1rem 2rem 1rem 1rem;
 }
 
-.mobile-nav {
+
+.menu {
   display: none;
 }
 
@@ -198,3 +197,17 @@ padding: 4rem 1rem 4rem 4rem;
   padding-top: 4rem;
   padding-left: 1rem;
 }
+
+@media only screen and (max-width: 1024px) { header { height: 22rem; padding-top: 0;} nav.flex-contain { max-width: 100%;} .main-banner { padding: .75rem 4rem; margin-top: 5rem; margin-right: 2rem;} .main-banner h1 { font-size: 1.33rem;}}
+
+@media only screen and (max-width: 700px) { .menu ul { display: none;} .menu ul.truncated-menu { display: block;}}
+
+@media only screen and (max-width: 560px) { header div span {display: none;} header { background-position: 20%; height: 17rem;} .main-banner { width: 100%; padding: 0 1rem; margin: 9rem auto 0 auto; text-align: center;} .main-banner h1 { font-size: 1rem;}}
+
+@media only screen and (max-width: 560px) { .supporting {flex-direction: column; justify-content: flex-start; align-items: center; margin-top: 3rem;}}
+
+@media only screen and (max-width: 560px) { .service { height: auto; margin: .77rem; font-size: .77rem;}}
+
+@media only screen and (max-width: 560px;) { .info { width: 100%;} .info .title { width: 100%; max-width: none; margin-right: 0; text-align: center;} .info p { padding: 1rem; font-size: .77rem;}}
+
+@media only screen and (max-width: 560px;) { footer { justify-content: center;} footer div {display: none;}}
