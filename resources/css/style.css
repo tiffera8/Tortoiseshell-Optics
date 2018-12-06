@@ -74,23 +74,29 @@ header span {
   margin-top: 0;
 }
 
+.content .flex-container {
+    justify-content: flex-end;
+  }
+
 .content {
-  display: inline-block;
-  margin-top: 10rem;
+  display: flex;
+  position: relative;
+  top: 10rem;
+  left: 33rem;
+  width: 400px;
   margin-right: -2rem;
   background-color: white;
-  color: gray;
-  height: 5rem;
+  height: 4rem;
   text-align: center;
-  align-items: center;
+  padding: 1.5rem 5rem;
 }
+
 
 .content span {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
-  padding: 1.5rem 5rem;
 }
 
 /* store */
